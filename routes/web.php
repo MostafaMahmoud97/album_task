@@ -29,4 +29,3 @@ Route::group(["prefix" => "albums"],function (){
     Route::post("/update/{id}",[AlbumController::class,"update"])->name("album.update");
 });
 
-Route::get('/{page}', [\App\Http\Controllers\AdminController::class,"index"]);

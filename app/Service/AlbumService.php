@@ -160,12 +160,6 @@ class AlbumService implements AlbumInterface
         return $this->successResponse([], "album has been deleted success");
     }
 
-    public function getAnotherAlbums($id)
-    {
-        $Albums = Album::where("id", "!=", $id)->get();
-        return $this->successResponse($Albums, "albums has been fetched success");
-    }
-
     public function movePictures($id, $request)
     {
         $Album = Album::find($id);

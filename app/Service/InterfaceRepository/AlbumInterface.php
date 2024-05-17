@@ -18,8 +18,6 @@ interface AlbumInterface
 
     public function deleteAlbum($id);
 
-    public function getAnotherAlbums($id);
-
     public function movePictures($id,$request);
 
 }
